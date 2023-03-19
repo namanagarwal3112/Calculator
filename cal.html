@@ -10,39 +10,39 @@
 <body>
     <center>
         <h1>Basic Calculator</h1>
-    <table class="cal" id="res">
+    <table class="cal" >
         <tr>
             <td colspan="4"><input type="text" id="result"></td>
         </tr>
         <tr>
-            <td><input type="button" class="assignment"   value="AC" name="" id="res" onclick="Clear()"></td>
-            <td><input type="button" class="assignment"   value="DEL"  name="" id="res" onclick="Back()"></td>
-            <td><input type="button" class="assignment"  value="%"  name="" id="res" onclick="solve('%')"></td>
-            <td><input type="button" cl ass="assignment"  value="/"  name="" id="res" onclick="solve('/')"></td>
+            <td><input type="button" class="assignment"   value="AC" onclick="Clear()"></td>
+            <td><input type="button" class="assignment"   value="DEL"onclick="Back()"></td>
+            <td><input type="button" class="assignment"   value="%"  onclick="solve('%')"></td>
+            <td><input type="button" class="assignment"   value="/"  onclick="solve('/')"></td>
         </tr>
         <tr>
-            <td><input type="button" class="key" value="7"  name="" id="res" onclick="solve('7')"></td>
-            <td><input type="button" class="key"  value="8"  name="" id="res" onclick="solve('8')"></td>
-            <td><input type="button" class="key"  value="9"  name="" id="res" onclick="solve('9')"></td>
-            <td><input type="button" class="assignment" value="x"  name="" id="res" onclick="solve('*')"></td>
+            <td><input type="button" class="key" value="7"    onclick="solve('7')"></td>
+            <td><input type="button" class="key"  value="8"    onclick="solve('8')"></td>
+            <td><input type="button" class="key"  value="9"    onclick="solve('9')"></td>
+            <td><input type="button" class="assignment" value="x" onclick="solve('*')"></td>
         </tr>
         <tr>
-            <td><input type="button" class="key"  value="4"  name="" id="res" onclick="solve('4')"></td>
-            <td><input type="button" class="key"  value="5"  name="" id="res" onclick="solve('5')"></td>
-            <td><input type="button" class="key"  value="6"  name="" id="res" onclick="solve('6')"></td>
-            <td><input type="button" class="assignment"  value="-"  name="" id="res" onclick="solve('-')"></td>
+            <td><input type="button" class="key"  value="4" onclick="solve('4')"></td>
+            <td><input type="button" class="key"  value="5" onclick="solve('5')"></td>
+            <td><input type="button" class="key"  value="6" onclick="solve('6')"></td>
+            <td><input type="button" class="assignment"  value="-" onclick="solve('-')"></td>
         </tr>
         <tr>
-            <td><input type="button" class="key"  value="1"  name="" id="res" onclick="solve('1')"></td>
-            <td><input type="button" class="key"  value="2"  name="" id="res" onclick="solve('2')"></td>
-            <td><input type="button" class="key"  value="3"  name="" id="res" onclick="solve('3')"></td>
-            <td><input type="button" class="assignment"   value="+"  name="" id="res" onclick="solve('+')"></td>
+            <td><input type="button" class="key"  value="1" onclick="solve('1')"></td>
+            <td><input type="button" class="key"  value="2" onclick="solve('2')"></td>
+            <td><input type="button" class="key"  value="3" onclick="solve('3')"></td>
+            <td><input type="button" class="assignment"   value="+" onclick="solve('+')"></td>
         </tr>
         <tr>
-            <td><input type="button" class="key"   value="." name="" id="res" onclick="solve('.')"></td>
-            <td><input type="button" class="key"   value="0" name="" id="res" onclick="solve('0')"></td>
-            <td><input type="button" class="key"   value="00" name="" id="res" onclick="solve('00')"></td>
-            <td ><input type="button" class="equal" value="=" name="" id="equal" onclick="result()"></td>
+            <td><input type="button" class="key"   value="." onclick="solve('.')"></td>
+            <td><input type="button" class="key"   value="0" onclick="solve('0')"></td>
+            <td><input type="button" class="key"   value="00" onclick="solve('00')"></td>
+            <td ><input type="button" class="equal" value="="  id="equal" onclick="result()"></td>
         </tr>
     </table>
 </center>

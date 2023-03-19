@@ -1,49 +1,20 @@
 function solve(val) {
-  document.getElementById("result").value += val;
-}
-
-function myFunction(event) {
-  if (
-    event.key == "0" ||
-    event.key == "1" ||
-    event.key == "2" ||
-    event.key == "3" ||
-    event.key == "4" ||
-    event.key == "5" ||
-    event.key == "6" ||
-    event.key == "7" ||
-    event.key == "8" ||
-    event.key == "9" ||
-    event.key == "+" ||
-    event.key == "-" ||
-    event.key == "*" ||
-    event.key == "/"
-  )
-    document.getElementById("result").value += event.key;
-}
-
-var cal = document.getElementById("calcu");
-cal.onkeyup = function (event) {
-  if (event.keyCode === 13) {
-    console.log("Enter");
-    let x = document.getElementById("result").value;
-    console.log(x);
-    solve();
+  var x = document.getElementById("result");
+  if (x > 31 && (x < 48 || x > 57)) {
+    return false;
   }
-};
-
-// Function that evaluates the digit and return result
+  x.value += val;
+}
 function result() {
-  let x = document.getElementById("result").value;
-  let y = math.evaluate(x);
+  var x = document.getElementById("result").value;
+  var y = eval(x);
   document.getElementById("result").value = y;
 }
 
-// Function that clear the display
 function Clear() {
   document.getElementById("result").value = "";
 }
 function Back() {
-  var ev = document.getElementById("res");
-  ev.value = ev.value.slice(0, -1);
+  var x = document.getElementById("result");
+  x.value = x.value.slice(0, -1);
 }
