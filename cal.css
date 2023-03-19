@@ -17,10 +17,10 @@ input[type="button"]{
     border-color: white;
 }
 input[type="text"]{
-    padding-left: 30%;
-    padding-right: 25%;
-    padding-top: 10%;
+    width: 100%;
+    padding: 20px 0px;
     border-radius: 10px;
+    font-size: 30px;
 }
 .equal{
     background-color: green;
