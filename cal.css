@@ -5,6 +5,7 @@ body{
 .cal{
     padding: 20px;
     background-color: black;
+    border-radius: 20px;
 }
 input[type="button"]{
     width: 100%;
